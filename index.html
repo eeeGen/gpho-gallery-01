@@ -1,61 +1,100 @@
 <!doctype html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>gpho-gallery-01</title>
-  <meta name="description" content="Browse and download original photos from gpho-gallery-01.">
-  <meta property="og:title" content="gpho-gallery-01">
-  <meta property="og:description" content="Browse, select, and download original photo files.">
-  <meta property="og:type" content="website">
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-  <header class="topbar">
-    <div>
-      <h1><span aria-hidden="true">GP</span> gpho-gallery-01</h1>
-      <p id="meta">Loading gallery</p>
-    </div>
-    <div class="top-actions">
-      <button class="button" id="selectAll" type="button">Select All</button>
-    </div>
-  </header>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>gpho-gallery-01</title>
+    <meta
+      name="description"
+      content="Browse and download original photos from gpho-gallery-01."
+    />
+    <meta property="og:title" content="gpho-gallery-01" />
+    <meta
+      property="og:description"
+      content="Browse, select, and download original photo files."
+    />
+    <meta property="og:type" content="website" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <div>
+        <h1><span aria-hidden="true">EGEN</span> gpho-gallery-01</h1>
+        <p id="meta">Loading gallery</p>
+      </div>
+      <div class="top-actions">
+        <button class="button" id="selectAll" type="button">Select All</button>
+      </div>
+    </header>
 
-  <main>
-    <div class="loading" id="loading" role="status">Loading gallery...</div>
-    <section class="grid" id="grid" aria-label="Photo gallery"></section>
-  </main>
+    <main>
+      <div class="loading" id="loading" role="status">Loading gallery...</div>
+      <section class="grid" id="grid" aria-label="Photo gallery"></section>
+    </main>
 
-  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Photo preview">
-    <div class="lightbox-top">
-      <span id="lightboxName"></span>
-      <button class="icon-button" id="closeLightbox" type="button" aria-label="Close preview">x</button>
+    <div
+      class="lightbox"
+      id="lightbox"
+      role="dialog"
+      aria-modal="true"
+      aria-label="Photo preview"
+    >
+      <div class="lightbox-top">
+        <span id="lightboxName"></span>
+        <button
+          class="icon-button"
+          id="closeLightbox"
+          type="button"
+          aria-label="Close preview"
+        >
+          x
+        </button>
+      </div>
+      <div class="lightbox-body">
+        <button
+          class="nav-button prev"
+          id="prevPhoto"
+          type="button"
+          aria-label="Previous photo"
+        >
+          &lt;
+        </button>
+        <img id="lightboxImage" src="" alt="" />
+        <button
+          class="nav-button next"
+          id="nextPhoto"
+          type="button"
+          aria-label="Next photo"
+        >
+          &gt;
+        </button>
+      </div>
+      <div class="lightbox-actions">
+        <button class="button" id="toggleLightboxSelection" type="button">
+          Select
+        </button>
+        <a class="button" id="downloadSingle" href="#" download
+          >Download Original</a
+        >
+      </div>
     </div>
-    <div class="lightbox-body">
-      <button class="nav-button prev" id="prevPhoto" type="button" aria-label="Previous photo">&lt;</button>
-      <img id="lightboxImage" src="" alt="">
-      <button class="nav-button next" id="nextPhoto" type="button" aria-label="Next photo">&gt;</button>
-    </div>
-    <div class="lightbox-actions">
-      <button class="button" id="toggleLightboxSelection" type="button">Select</button>
-      <a class="button" id="downloadSingle" href="#" download>Download Original</a>
-    </div>
-  </div>
 
-  <aside class="selection-bar" id="selectionBar" aria-live="polite">
-    <div>
-      <strong id="selectedCount">0</strong>
-      <span id="selectedLabel">photos selected</span>
-      <span id="selectedSize"></span>
-      <p id="selectedHint">Original files only</p>
-    </div>
-    <div class="selection-actions">
-      <button class="button" id="clearSelection" type="button">Clear</button>
-      <button class="button primary" id="downloadSelection" type="button">Download Originals</button>
-    </div>
-  </aside>
+    <aside class="selection-bar" id="selectionBar" aria-live="polite">
+      <div>
+        <strong id="selectedCount">0</strong>
+        <span id="selectedLabel">photos selected</span>
+        <span id="selectedSize"></span>
+        <p id="selectedHint">Original files only</p>
+      </div>
+      <div class="selection-actions">
+        <button class="button" id="clearSelection" type="button">Clear</button>
+        <button class="button primary" id="downloadSelection" type="button">
+          Download Originals
+        </button>
+      </div>
+    </aside>
 
-  <footer class="credit">gpho-gallery-01</footer>
-  <script src="app.js"></script>
-</body>
+    <footer class="credit">gpho-gallery-01</footer>
+    <script src="app.js"></script>
+  </body>
 </html>
