@@ -1,0 +1,727 @@
+{
+  "title": "gpho-gallery-01",
+  "count": 80,
+  "generatedAt": "2026-08-02T02:30:46",
+  "photos": [
+    {
+      "filename": "DSCF0415.JPG",
+      "original": "assets/originals/DSCF0415.JPG",
+      "thumb": "assets/thumbs/DSCF0415_thumb.jpg",
+      "preview": "assets/previews/DSCF0415_preview.jpg",
+      "width": 6240,
+      "height": 4160,
+      "size": 16690410
+    },
+    {
+      "filename": "DSCF0416.JPG",
+      "original": "assets/originals/DSCF0416.JPG",
+      "thumb": "assets/thumbs/DSCF0416_thumb.jpg",
+      "preview": "assets/previews/DSCF0416_preview.jpg",
+      "width": 6240,
+      "height": 4160,
+      "size": 16888781
+    },
+    {
+      "filename": "DSCF0417.JPG",
+      "original": "assets/originals/DSCF0417.JPG",
+      "thumb": "assets/thumbs/DSCF0417_thumb.jpg",
+      "preview": "assets/previews/DSCF0417_preview.jpg",
+      "width": 6240,
+      "height": 4160,
+      "size": 16389974
+    },
+    {
+      "filename": "DSCF0418.JPG",
+      "original": "assets/originals/DSCF0418.JPG",
+      "thumb": "assets/thumbs/DSCF0418_thumb.jpg",
+      "preview": "assets/previews/DSCF0418_preview.jpg",
+      "width": 6240,
+      "height": 4160,
+      "size": 16628036
+    },
+    {
+      "filename": "DSCF0419.JPG",
+      "original": "assets/originals/DSCF0419.JPG",
+      "thumb": "assets/thumbs/DSCF0419_thumb.jpg",
+      "preview": "assets/previews/DSCF0419_preview.jpg",
+      "width": 6240,
+      "height": 4160,
+      "size": 16845479
+    },
+    {
+      "filename": "DSCF0420.JPG",
+      "original": "assets/originals/DSCF0420.JPG",
+      "thumb": "assets/thumbs/DSCF0420_thumb.jpg",
+      "preview": "assets/previews/DSCF0420_preview.jpg",
+      "width": 6240,
+      "height": 4160,
+      "size": 14444211
+    },
+    {
+      "filename": "DSCF0421.JPG",
+      "original": "assets/originals/DSCF0421.JPG",
+      "thumb": "assets/thumbs/DSCF0421_thumb.jpg",
+      "preview": "assets/previews/DSCF0421_preview.jpg",
+      "width": 6240,
+      "height": 4160,
+      "size": 15452185
+    },
+    {
+      "filename": "DSCF0422.JPG",
+      "original": "assets/originals/DSCF0422.JPG",
+      "thumb": "assets/thumbs/DSCF0422_thumb.jpg",
+      "preview": "assets/previews/DSCF0422_preview.jpg",
+      "width": 6240,
+      "height": 4160,
+      "size": 11593766
+    },
+    {
+      "filename": "DSCF0423.JPG",
+      "original": "assets/originals/DSCF0423.JPG",
+      "thumb": "assets/thumbs/DSCF0423_thumb.jpg",
+      "preview": "assets/previews/DSCF0423_preview.jpg",
+      "width": 6240,
+      "height": 4160,
+      "size": 7656179
+    },
+    {
+      "filename": "DSCF0424.JPG",
+      "original": "assets/originals/DSCF0424.JPG",
+      "thumb": "assets/thumbs/DSCF0424_thumb.jpg",
+      "preview": "assets/previews/DSCF0424_preview.jpg",
+      "width": 6240,
+      "height": 4160,
+      "size": 10692769
+    },
+    {
+      "filename": "DSCF0425.JPG",
+      "original": "assets/originals/DSCF0425.JPG",
+      "thumb": "assets/thumbs/DSCF0425_thumb.jpg",
+      "preview": "assets/previews/DSCF0425_preview.jpg",
+      "width": 6240,
+      "height": 4160,
+      "size": 9461826
+    },
+    {
+      "filename": "DSCF0426.JPG",
+      "original": "assets/originals/DSCF0426.JPG",
+      "thumb": "assets/thumbs/DSCF0426_thumb.jpg",
+      "preview": "assets/previews/DSCF0426_preview.jpg",
+      "width": 6240,
+      "height": 4160,
+      "size": 5465987
+    },
+    {
+      "filename": "DSCF0427.JPG",
+      "original": "assets/originals/DSCF0427.JPG",
+      "thumb": "assets/thumbs/DSCF0427_thumb.jpg",
+      "preview": "assets/previews/DSCF0427_preview.jpg",
+      "width": 6240,
+      "height": 4160,
+      "size": 9328777
+    },
+    {
+      "filename": "DSCF0428.JPG",
+      "original": "assets/originals/DSCF0428.JPG",
+      "thumb": "assets/thumbs/DSCF0428_thumb.jpg",
+      "preview": "assets/previews/DSCF0428_preview.jpg",
+      "width": 6240,
+      "height": 4160,
+      "size": 9462151
+    },
+    {
+      "filename": "DSCF0429.JPG",
+      "original": "assets/originals/DSCF0429.JPG",
+      "thumb": "assets/thumbs/DSCF0429_thumb.jpg",
+      "preview": "assets/previews/DSCF0429_preview.jpg",
+      "width": 6240,
+      "height": 4160,
+      "size": 11000549
+    },
+    {
+      "filename": "DSCF0430.JPG",
+      "original": "assets/originals/DSCF0430.JPG",
+      "thumb": "assets/thumbs/DSCF0430_thumb.jpg",
+      "preview": "assets/previews/DSCF0430_preview.jpg",
+      "width": 6240,
+      "height": 4160,
+      "size": 15200143
+    },
+    {
+      "filename": "DSCF0431.JPG",
+      "original": "assets/originals/DSCF0431.JPG",
+      "thumb": "assets/thumbs/DSCF0431_thumb.jpg",
+      "preview": "assets/previews/DSCF0431_preview.jpg",
+      "width": 6240,
+      "height": 4160,
+      "size": 13623133
+    },
+    {
+      "filename": "DSCF0432.JPG",
+      "original": "assets/originals/DSCF0432.JPG",
+      "thumb": "assets/thumbs/DSCF0432_thumb.jpg",
+      "preview": "assets/previews/DSCF0432_preview.jpg",
+      "width": 6240,
+      "height": 4160,
+      "size": 11254925
+    },
+    {
+      "filename": "DSCF0433.JPG",
+      "original": "assets/originals/DSCF0433.JPG",
+      "thumb": "assets/thumbs/DSCF0433_thumb.jpg",
+      "preview": "assets/previews/DSCF0433_preview.jpg",
+      "width": 6240,
+      "height": 4160,
+      "size": 11799178
+    },
+    {
+      "filename": "DSCF0434.JPG",
+      "original": "assets/originals/DSCF0434.JPG",
+      "thumb": "assets/thumbs/DSCF0434_thumb.jpg",
+      "preview": "assets/previews/DSCF0434_preview.jpg",
+      "width": 6240,
+      "height": 4160,
+      "size": 12047415
+    },
+    {
+      "filename": "DSCF0435.JPG",
+      "original": "assets/originals/DSCF0435.JPG",
+      "thumb": "assets/thumbs/DSCF0435_thumb.jpg",
+      "preview": "assets/previews/DSCF0435_preview.jpg",
+      "width": 6240,
+      "height": 4160,
+      "size": 13351456
+    },
+    {
+      "filename": "DSCF0436.JPG",
+      "original": "assets/originals/DSCF0436.JPG",
+      "thumb": "assets/thumbs/DSCF0436_thumb.jpg",
+      "preview": "assets/previews/DSCF0436_preview.jpg",
+      "width": 6240,
+      "height": 4160,
+      "size": 12089070
+    },
+    {
+      "filename": "DSCF0437.JPG",
+      "original": "assets/originals/DSCF0437.JPG",
+      "thumb": "assets/thumbs/DSCF0437_thumb.jpg",
+      "preview": "assets/previews/DSCF0437_preview.jpg",
+      "width": 6240,
+      "height": 4160,
+      "size": 12555449
+    },
+    {
+      "filename": "DSCF0438.JPG",
+      "original": "assets/originals/DSCF0438.JPG",
+      "thumb": "assets/thumbs/DSCF0438_thumb.jpg",
+      "preview": "assets/previews/DSCF0438_preview.jpg",
+      "width": 6240,
+      "height": 4160,
+      "size": 10813278
+    },
+    {
+      "filename": "DSCF0439.JPG",
+      "original": "assets/originals/DSCF0439.JPG",
+      "thumb": "assets/thumbs/DSCF0439_thumb.jpg",
+      "preview": "assets/previews/DSCF0439_preview.jpg",
+      "width": 6240,
+      "height": 4160,
+      "size": 10570033
+    },
+    {
+      "filename": "DSCF0440.JPG",
+      "original": "assets/originals/DSCF0440.JPG",
+      "thumb": "assets/thumbs/DSCF0440_thumb.jpg",
+      "preview": "assets/previews/DSCF0440_preview.jpg",
+      "width": 6240,
+      "height": 4160,
+      "size": 13585658
+    },
+    {
+      "filename": "DSCF0521.JPG",
+      "original": "assets/originals/DSCF0521.JPG",
+      "thumb": "assets/thumbs/DSCF0521_thumb.jpg",
+      "preview": "assets/previews/DSCF0521_preview.jpg",
+      "width": 6240,
+      "height": 4160,
+      "size": 12762635
+    },
+    {
+      "filename": "DSCF0522.JPG",
+      "original": "assets/originals/DSCF0522.JPG",
+      "thumb": "assets/thumbs/DSCF0522_thumb.jpg",
+      "preview": "assets/previews/DSCF0522_preview.jpg",
+      "width": 6240,
+      "height": 4160,
+      "size": 13309998
+    },
+    {
+      "filename": "DSCF0529.JPG",
+      "original": "assets/originals/DSCF0529.JPG",
+      "thumb": "assets/thumbs/DSCF0529_thumb.jpg",
+      "preview": "assets/previews/DSCF0529_preview.jpg",
+      "width": 6240,
+      "height": 4160,
+      "size": 12864390
+    },
+    {
+      "filename": "DSCF0530.JPG",
+      "original": "assets/originals/DSCF0530.JPG",
+      "thumb": "assets/thumbs/DSCF0530_thumb.jpg",
+      "preview": "assets/previews/DSCF0530_preview.jpg",
+      "width": 6240,
+      "height": 4160,
+      "size": 12828074
+    },
+    {
+      "filename": "DSCF0534.JPG",
+      "original": "assets/originals/DSCF0534.JPG",
+      "thumb": "assets/thumbs/DSCF0534_thumb.jpg",
+      "preview": "assets/previews/DSCF0534_preview.jpg",
+      "width": 6240,
+      "height": 4160,
+      "size": 13249401
+    },
+    {
+      "filename": "DSCF0553.JPG",
+      "original": "assets/originals/DSCF0553.JPG",
+      "thumb": "assets/thumbs/DSCF0553_thumb.jpg",
+      "preview": "assets/previews/DSCF0553_preview.jpg",
+      "width": 6240,
+      "height": 4160,
+      "size": 13016371
+    },
+    {
+      "filename": "DSCF0554.JPG",
+      "original": "assets/originals/DSCF0554.JPG",
+      "thumb": "assets/thumbs/DSCF0554_thumb.jpg",
+      "preview": "assets/previews/DSCF0554_preview.jpg",
+      "width": 6240,
+      "height": 4160,
+      "size": 12814410
+    },
+    {
+      "filename": "DSCF0561.JPG",
+      "original": "assets/originals/DSCF0561.JPG",
+      "thumb": "assets/thumbs/DSCF0561_thumb.jpg",
+      "preview": "assets/previews/DSCF0561_preview.jpg",
+      "width": 6240,
+      "height": 4160,
+      "size": 13171344
+    },
+    {
+      "filename": "DSCF0562.JPG",
+      "original": "assets/originals/DSCF0562.JPG",
+      "thumb": "assets/thumbs/DSCF0562_thumb.jpg",
+      "preview": "assets/previews/DSCF0562_preview.jpg",
+      "width": 6240,
+      "height": 4160,
+      "size": 12828107
+    },
+    {
+      "filename": "DSCF0563.JPG",
+      "original": "assets/originals/DSCF0563.JPG",
+      "thumb": "assets/thumbs/DSCF0563_thumb.jpg",
+      "preview": "assets/previews/DSCF0563_preview.jpg",
+      "width": 6240,
+      "height": 4160,
+      "size": 13192221
+    },
+    {
+      "filename": "DSCF0564.JPG",
+      "original": "assets/originals/DSCF0564.JPG",
+      "thumb": "assets/thumbs/DSCF0564_thumb.jpg",
+      "preview": "assets/previews/DSCF0564_preview.jpg",
+      "width": 6240,
+      "height": 4160,
+      "size": 12800629
+    },
+    {
+      "filename": "DSCF0565.JPG",
+      "original": "assets/originals/DSCF0565.JPG",
+      "thumb": "assets/thumbs/DSCF0565_thumb.jpg",
+      "preview": "assets/previews/DSCF0565_preview.jpg",
+      "width": 6240,
+      "height": 4160,
+      "size": 13071703
+    },
+    {
+      "filename": "DSCF0566.JPG",
+      "original": "assets/originals/DSCF0566.JPG",
+      "thumb": "assets/thumbs/DSCF0566_thumb.jpg",
+      "preview": "assets/previews/DSCF0566_preview.jpg",
+      "width": 6240,
+      "height": 4160,
+      "size": 13075095
+    },
+    {
+      "filename": "DSCF0567.JPG",
+      "original": "assets/originals/DSCF0567.JPG",
+      "thumb": "assets/thumbs/DSCF0567_thumb.jpg",
+      "preview": "assets/previews/DSCF0567_preview.jpg",
+      "width": 6240,
+      "height": 4160,
+      "size": 13664358
+    },
+    {
+      "filename": "DSCF0568.JPG",
+      "original": "assets/originals/DSCF0568.JPG",
+      "thumb": "assets/thumbs/DSCF0568_thumb.jpg",
+      "preview": "assets/previews/DSCF0568_preview.jpg",
+      "width": 6240,
+      "height": 4160,
+      "size": 13211739
+    },
+    {
+      "filename": "DSCF0569.JPG",
+      "original": "assets/originals/DSCF0569.JPG",
+      "thumb": "assets/thumbs/DSCF0569_thumb.jpg",
+      "preview": "assets/previews/DSCF0569_preview.jpg",
+      "width": 6240,
+      "height": 4160,
+      "size": 13101019
+    },
+    {
+      "filename": "DSCF0570.JPG",
+      "original": "assets/originals/DSCF0570.JPG",
+      "thumb": "assets/thumbs/DSCF0570_thumb.jpg",
+      "preview": "assets/previews/DSCF0570_preview.jpg",
+      "width": 6240,
+      "height": 4160,
+      "size": 13090849
+    },
+    {
+      "filename": "DSCF0571.JPG",
+      "original": "assets/originals/DSCF0571.JPG",
+      "thumb": "assets/thumbs/DSCF0571_thumb.jpg",
+      "preview": "assets/previews/DSCF0571_preview.jpg",
+      "width": 6240,
+      "height": 4160,
+      "size": 12807404
+    },
+    {
+      "filename": "DSCF0572.JPG",
+      "original": "assets/originals/DSCF0572.JPG",
+      "thumb": "assets/thumbs/DSCF0572_thumb.jpg",
+      "preview": "assets/previews/DSCF0572_preview.jpg",
+      "width": 6240,
+      "height": 4160,
+      "size": 13496851
+    },
+    {
+      "filename": "DSCF0573.JPG",
+      "original": "assets/originals/DSCF0573.JPG",
+      "thumb": "assets/thumbs/DSCF0573_thumb.jpg",
+      "preview": "assets/previews/DSCF0573_preview.jpg",
+      "width": 6240,
+      "height": 4160,
+      "size": 13516349
+    },
+    {
+      "filename": "DSCF0574.JPG",
+      "original": "assets/originals/DSCF0574.JPG",
+      "thumb": "assets/thumbs/DSCF0574_thumb.jpg",
+      "preview": "assets/previews/DSCF0574_preview.jpg",
+      "width": 6240,
+      "height": 4160,
+      "size": 13322028
+    },
+    {
+      "filename": "DSCF0575.JPG",
+      "original": "assets/originals/DSCF0575.JPG",
+      "thumb": "assets/thumbs/DSCF0575_thumb.jpg",
+      "preview": "assets/previews/DSCF0575_preview.jpg",
+      "width": 6240,
+      "height": 4160,
+      "size": 13558806
+    },
+    {
+      "filename": "DSCF0576.JPG",
+      "original": "assets/originals/DSCF0576.JPG",
+      "thumb": "assets/thumbs/DSCF0576_thumb.jpg",
+      "preview": "assets/previews/DSCF0576_preview.jpg",
+      "width": 6240,
+      "height": 4160,
+      "size": 13458571
+    },
+    {
+      "filename": "DSCF0577.JPG",
+      "original": "assets/originals/DSCF0577.JPG",
+      "thumb": "assets/thumbs/DSCF0577_thumb.jpg",
+      "preview": "assets/previews/DSCF0577_preview.jpg",
+      "width": 6240,
+      "height": 4160,
+      "size": 13471931
+    },
+    {
+      "filename": "DSCF0578.JPG",
+      "original": "assets/originals/DSCF0578.JPG",
+      "thumb": "assets/thumbs/DSCF0578_thumb.jpg",
+      "preview": "assets/previews/DSCF0578_preview.jpg",
+      "width": 6240,
+      "height": 4160,
+      "size": 13098214
+    },
+    {
+      "filename": "DSCF0579.JPG",
+      "original": "assets/originals/DSCF0579.JPG",
+      "thumb": "assets/thumbs/DSCF0579_thumb.jpg",
+      "preview": "assets/previews/DSCF0579_preview.jpg",
+      "width": 6240,
+      "height": 4160,
+      "size": 13400919
+    },
+    {
+      "filename": "DSCF0580.JPG",
+      "original": "assets/originals/DSCF0580.JPG",
+      "thumb": "assets/thumbs/DSCF0580_thumb.jpg",
+      "preview": "assets/previews/DSCF0580_preview.jpg",
+      "width": 6240,
+      "height": 4160,
+      "size": 13473489
+    },
+    {
+      "filename": "DSCF0581.JPG",
+      "original": "assets/originals/DSCF0581.JPG",
+      "thumb": "assets/thumbs/DSCF0581_thumb.jpg",
+      "preview": "assets/previews/DSCF0581_preview.jpg",
+      "width": 6240,
+      "height": 4160,
+      "size": 13640559
+    },
+    {
+      "filename": "DSCF0582.JPG",
+      "original": "assets/originals/DSCF0582.JPG",
+      "thumb": "assets/thumbs/DSCF0582_thumb.jpg",
+      "preview": "assets/previews/DSCF0582_preview.jpg",
+      "width": 6240,
+      "height": 4160,
+      "size": 13161351
+    },
+    {
+      "filename": "DSCF0583.JPG",
+      "original": "assets/originals/DSCF0583.JPG",
+      "thumb": "assets/thumbs/DSCF0583_thumb.jpg",
+      "preview": "assets/previews/DSCF0583_preview.jpg",
+      "width": 6240,
+      "height": 4160,
+      "size": 12048129
+    },
+    {
+      "filename": "DSCF0584.JPG",
+      "original": "assets/originals/DSCF0584.JPG",
+      "thumb": "assets/thumbs/DSCF0584_thumb.jpg",
+      "preview": "assets/previews/DSCF0584_preview.jpg",
+      "width": 6240,
+      "height": 4160,
+      "size": 13430792
+    },
+    {
+      "filename": "DSCF0585.JPG",
+      "original": "assets/originals/DSCF0585.JPG",
+      "thumb": "assets/thumbs/DSCF0585_thumb.jpg",
+      "preview": "assets/previews/DSCF0585_preview.jpg",
+      "width": 6240,
+      "height": 4160,
+      "size": 13181328
+    },
+    {
+      "filename": "DSCF0586.JPG",
+      "original": "assets/originals/DSCF0586.JPG",
+      "thumb": "assets/thumbs/DSCF0586_thumb.jpg",
+      "preview": "assets/previews/DSCF0586_preview.jpg",
+      "width": 6240,
+      "height": 4160,
+      "size": 13561332
+    },
+    {
+      "filename": "DSCF0587.JPG",
+      "original": "assets/originals/DSCF0587.JPG",
+      "thumb": "assets/thumbs/DSCF0587_thumb.jpg",
+      "preview": "assets/previews/DSCF0587_preview.jpg",
+      "width": 6240,
+      "height": 4160,
+      "size": 14447461
+    },
+    {
+      "filename": "DSCF0588.JPG",
+      "original": "assets/originals/DSCF0588.JPG",
+      "thumb": "assets/thumbs/DSCF0588_thumb.jpg",
+      "preview": "assets/previews/DSCF0588_preview.jpg",
+      "width": 6240,
+      "height": 4160,
+      "size": 14521937
+    },
+    {
+      "filename": "DSCF0589.JPG",
+      "original": "assets/originals/DSCF0589.JPG",
+      "thumb": "assets/thumbs/DSCF0589_thumb.jpg",
+      "preview": "assets/previews/DSCF0589_preview.jpg",
+      "width": 6240,
+      "height": 4160,
+      "size": 12266014
+    },
+    {
+      "filename": "DSCF0590.JPG",
+      "original": "assets/originals/DSCF0590.JPG",
+      "thumb": "assets/thumbs/DSCF0590_thumb.jpg",
+      "preview": "assets/previews/DSCF0590_preview.jpg",
+      "width": 6240,
+      "height": 4160,
+      "size": 12216863
+    },
+    {
+      "filename": "DSCF0591.JPG",
+      "original": "assets/originals/DSCF0591.JPG",
+      "thumb": "assets/thumbs/DSCF0591_thumb.jpg",
+      "preview": "assets/previews/DSCF0591_preview.jpg",
+      "width": 6240,
+      "height": 4160,
+      "size": 12178789
+    },
+    {
+      "filename": "DSCF0592.JPG",
+      "original": "assets/originals/DSCF0592.JPG",
+      "thumb": "assets/thumbs/DSCF0592_thumb.jpg",
+      "preview": "assets/previews/DSCF0592_preview.jpg",
+      "width": 6240,
+      "height": 4160,
+      "size": 12201833
+    },
+    {
+      "filename": "DSCF0593.JPG",
+      "original": "assets/originals/DSCF0593.JPG",
+      "thumb": "assets/thumbs/DSCF0593_thumb.jpg",
+      "preview": "assets/previews/DSCF0593_preview.jpg",
+      "width": 6240,
+      "height": 4160,
+      "size": 12184440
+    },
+    {
+      "filename": "DSCF0594.JPG",
+      "original": "assets/originals/DSCF0594.JPG",
+      "thumb": "assets/thumbs/DSCF0594_thumb.jpg",
+      "preview": "assets/previews/DSCF0594_preview.jpg",
+      "width": 6240,
+      "height": 4160,
+      "size": 12191163
+    },
+    {
+      "filename": "DSCF0595.JPG",
+      "original": "assets/originals/DSCF0595.JPG",
+      "thumb": "assets/thumbs/DSCF0595_thumb.jpg",
+      "preview": "assets/previews/DSCF0595_preview.jpg",
+      "width": 6240,
+      "height": 4160,
+      "size": 12200636
+    },
+    {
+      "filename": "DSCF0596.JPG",
+      "original": "assets/originals/DSCF0596.JPG",
+      "thumb": "assets/thumbs/DSCF0596_thumb.jpg",
+      "preview": "assets/previews/DSCF0596_preview.jpg",
+      "width": 6240,
+      "height": 4160,
+      "size": 12265222
+    },
+    {
+      "filename": "DSCF0597.JPG",
+      "original": "assets/originals/DSCF0597.JPG",
+      "thumb": "assets/thumbs/DSCF0597_thumb.jpg",
+      "preview": "assets/previews/DSCF0597_preview.jpg",
+      "width": 6240,
+      "height": 4160,
+      "size": 12145272
+    },
+    {
+      "filename": "DSCF0598.JPG",
+      "original": "assets/originals/DSCF0598.JPG",
+      "thumb": "assets/thumbs/DSCF0598_thumb.jpg",
+      "preview": "assets/previews/DSCF0598_preview.jpg",
+      "width": 6240,
+      "height": 4160,
+      "size": 12135346
+    },
+    {
+      "filename": "DSCF0599.JPG",
+      "original": "assets/originals/DSCF0599.JPG",
+      "thumb": "assets/thumbs/DSCF0599_thumb.jpg",
+      "preview": "assets/previews/DSCF0599_preview.jpg",
+      "width": 6240,
+      "height": 4160,
+      "size": 12174382
+    },
+    {
+      "filename": "DSCF0600.JPG",
+      "original": "assets/originals/DSCF0600.JPG",
+      "thumb": "assets/thumbs/DSCF0600_thumb.jpg",
+      "preview": "assets/previews/DSCF0600_preview.jpg",
+      "width": 6240,
+      "height": 4160,
+      "size": 11990864
+    },
+    {
+      "filename": "DSCF0601.JPG",
+      "original": "assets/originals/DSCF0601.JPG",
+      "thumb": "assets/thumbs/DSCF0601_thumb.jpg",
+      "preview": "assets/previews/DSCF0601_preview.jpg",
+      "width": 6240,
+      "height": 4160,
+      "size": 12018695
+    },
+    {
+      "filename": "DSCF0602.JPG",
+      "original": "assets/originals/DSCF0602.JPG",
+      "thumb": "assets/thumbs/DSCF0602_thumb.jpg",
+      "preview": "assets/previews/DSCF0602_preview.jpg",
+      "width": 6240,
+      "height": 4160,
+      "size": 12251151
+    },
+    {
+      "filename": "DSCF0603.JPG",
+      "original": "assets/originals/DSCF0603.JPG",
+      "thumb": "assets/thumbs/DSCF0603_thumb.jpg",
+      "preview": "assets/previews/DSCF0603_preview.jpg",
+      "width": 6240,
+      "height": 4160,
+      "size": 12076431
+    },
+    {
+      "filename": "DSCF0604.JPG",
+      "original": "assets/originals/DSCF0604.JPG",
+      "thumb": "assets/thumbs/DSCF0604_thumb.jpg",
+      "preview": "assets/previews/DSCF0604_preview.jpg",
+      "width": 6240,
+      "height": 4160,
+      "size": 9504043
+    },
+    {
+      "filename": "DSCF0605.JPG",
+      "original": "assets/originals/DSCF0605.JPG",
+      "thumb": "assets/thumbs/DSCF0605_thumb.jpg",
+      "preview": "assets/previews/DSCF0605_preview.jpg",
+      "width": 6240,
+      "height": 4160,
+      "size": 9043513
+    },
+    {
+      "filename": "DSCF0606.JPG",
+      "original": "assets/originals/DSCF0606.JPG",
+      "thumb": "assets/thumbs/DSCF0606_thumb.jpg",
+      "preview": "assets/previews/DSCF0606_preview.jpg",
+      "width": 6240,
+      "height": 4160,
+      "size": 11167510
+    },
+    {
+      "filename": "DSCF0607.JPG",
+      "original": "assets/originals/DSCF0607.JPG",
+      "thumb": "assets/thumbs/DSCF0607_thumb.jpg",
+      "preview": "assets/previews/DSCF0607_preview.jpg",
+      "width": 6240,
+      "height": 4160,
+      "size": 12615959
+    }
+  ]
+}
