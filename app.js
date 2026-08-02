@@ -1,11 +1,14 @@
 const state = {
   photos: [],
+  allPhotos: [],
   selected: new Set(),
   lightboxIndex: -1,
   observer: null,
+  page: document.body.dataset.page || "gallery",
 };
 
 const $ = (id) => document.getElementById(id);
+const RETOUCH_STORAGE_KEY = "gpho-gallery-01-retouch-queue";
 
 const els = {
   grid: $("grid"),
@@ -19,6 +22,9 @@ const els = {
   selectedHint: $("selectedHint"),
   clearSelection: $("clearSelection"),
   downloadSelection: $("downloadSelection"),
+  addToRetouch: $("addToRetouch"),
+  removeFromRetouch: $("removeFromRetouch"),
+  openRetouch: $("openRetouch"),
   lightbox: $("lightbox"),
   lightboxName: $("lightboxName"),
   lightboxImage: $("lightboxImage"),
@@ -36,14 +42,25 @@ async function init() {
     const response = await fetch("photos.json", { cache: "no-store" });
     if (!response.ok) throw new Error(`Failed to load photos.json (${response.status})`);
     const data = await response.json();
-    state.photos = data.photos || [];
+    state.allPhotos = data.photos || [];
+    state.photos = state.page === "retouch"
+      ? getRetouchPhotos(state.allPhotos)
+      : state.allPhotos;
     setupObserver();
     renderGrid();
     bindEvents();
+    syncRetouchLink();
     els.loading.style.display = "none";
-    els.meta.textContent = `${state.photos.length} photos | originals in repository`;
+    syncPageMeta();
   } catch (error) {
     els.loading.textContent = error.message;
+  }
+}
+
+function syncRetouchLink() {
+  const filenames = readStoredRetouchQueue();
+  if (els.openRetouch && filenames.length) {
+    els.openRetouch.href = buildRetouchHref(filenames);
   }
 }
 
@@ -93,6 +110,8 @@ function bindEvents() {
   els.selectAll.addEventListener("click", toggleAll);
   els.clearSelection.addEventListener("click", clearSelection);
   els.downloadSelection.addEventListener("click", downloadSelectedOriginals);
+  els.addToRetouch?.addEventListener("click", addSelectionToRetouch);
+  els.removeFromRetouch?.addEventListener("click", removeSelectionFromRetouch);
   els.closeLightbox.addEventListener("click", closeLightbox);
   els.prevPhoto.addEventListener("click", () => moveLightbox(-1));
   els.nextPhoto.addEventListener("click", () => moveLightbox(1));
@@ -143,14 +162,36 @@ function syncUi() {
   els.selectedHint.textContent = count > 1
     ? "Browser will request each original file"
     : "Original files only";
-  els.selectAll.textContent = count === state.photos.length ? "Clear All" : "Select All";
+  els.selectAll.textContent = count > 0 && count === state.photos.length ? "Clear All" : "Select All";
   els.selectAll.classList.toggle("active", count > 0);
+  if (els.addToRetouch) {
+    els.addToRetouch.disabled = count === 0;
+    els.addToRetouch.textContent = count > 0 ? "Add to Retouch" : "Add to Retouch";
+  }
+  if (els.removeFromRetouch) {
+    els.removeFromRetouch.disabled = count === 0;
+  }
 
   document.querySelectorAll(".cell").forEach((cell, index) => {
     cell.classList.toggle("selected", state.selected.has(state.photos[index].filename));
   });
 
   if (state.lightboxIndex >= 0) syncLightboxButtons();
+}
+
+function syncPageMeta() {
+  if (state.page === "retouch") {
+    els.meta.textContent = state.photos.length
+      ? `${state.photos.length} retouch photos | originals only`
+      : "No retouch photos in this link";
+    if (!state.photos.length) {
+      els.loading.style.display = "grid";
+      els.loading.innerHTML = 'No retouch photos selected. <a href="index.html">Return to gallery</a>.';
+    }
+    return;
+  }
+
+  els.meta.textContent = `${state.photos.length} photos | originals in repository`;
 }
 
 function openLightbox(index) {
@@ -209,6 +250,74 @@ function downloadSelectedOriginals() {
       }
     }, index * 450);
   });
+}
+
+function addSelectionToRetouch() {
+  const filenames = state.photos
+    .filter((photo) => state.selected.has(photo.filename))
+    .map((photo) => photo.filename);
+  if (!filenames.length) return;
+
+  const current = readStoredRetouchQueue();
+  const merged = [...new Set([...current, ...filenames])];
+  writeStoredRetouchQueue(merged);
+
+  const href = buildRetouchHref(merged);
+  if (els.openRetouch) els.openRetouch.href = href;
+  window.location.href = href;
+}
+
+function removeSelectionFromRetouch() {
+  const selectedFilenames = new Set(state.selected);
+  if (!selectedFilenames.size) return;
+
+  const remaining = state.photos
+    .filter((photo) => !selectedFilenames.has(photo.filename))
+    .map((photo) => photo.filename);
+  writeStoredRetouchQueue(remaining);
+
+  window.location.href = remaining.length ? buildRetouchHref(remaining) : "retouch.html";
+}
+
+function getRetouchPhotos(allPhotos) {
+  const requested = readRetouchQuery();
+  const filenames = requested.length ? requested : readStoredRetouchQueue();
+  const requestedSet = new Set(filenames);
+  return allPhotos.filter((photo) => requestedSet.has(photo.filename));
+}
+
+function readRetouchQuery() {
+  const params = new URLSearchParams(window.location.search);
+  const value = params.get("photos");
+  if (!value) return [];
+  return value
+    .split(",")
+    .map((filename) => filename.trim())
+    .filter(Boolean);
+}
+
+function readStoredRetouchQueue() {
+  try {
+    const value = window.localStorage.getItem(RETOUCH_STORAGE_KEY);
+    const filenames = JSON.parse(value || "[]");
+    return Array.isArray(filenames) ? filenames.filter(Boolean) : [];
+  } catch {
+    return [];
+  }
+}
+
+function writeStoredRetouchQueue(filenames) {
+  try {
+    window.localStorage.setItem(RETOUCH_STORAGE_KEY, JSON.stringify(filenames));
+  } catch {
+    // The URL remains shareable even when local storage is unavailable.
+  }
+}
+
+function buildRetouchHref(filenames) {
+  const params = new URLSearchParams();
+  params.set("photos", filenames.join(","));
+  return `retouch.html?${params.toString()}`;
 }
 
 function triggerDownload(href, filename) {

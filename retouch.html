@@ -3,34 +3,34 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>gpho-gallery-01</title>
+    <title>Retouch Queue | gpho-gallery-01</title>
     <meta
       name="description"
-      content="Browse and download original photos from gpho-gallery-01."
+      content="Browse and download original photos queued for retouching."
     />
-    <meta property="og:title" content="gpho-gallery-01" />
+    <meta property="og:title" content="Retouch Queue | gpho-gallery-01" />
     <meta
       property="og:description"
-      content="Browse, select, and download original photo files."
+      content="Browse, select, and download original photo files queued for retouching."
     />
     <meta property="og:type" content="website" />
     <link rel="stylesheet" href="styles.css" />
   </head>
-  <body>
+  <body data-page="retouch">
     <header class="topbar">
       <div>
-        <h1><span aria-hidden="true">EGEN</span> gpho-gallery-01</h1>
-        <p id="meta">Loading gallery</p>
+        <h1><span aria-hidden="true">EGEN</span> Retouch Queue</h1>
+        <p id="meta">Loading retouch queue</p>
       </div>
       <div class="top-actions">
-        <a class="button" id="openRetouch" href="retouch.html">Retouch Queue</a>
+        <a class="button" href="index.html">Gallery</a>
         <button class="button" id="selectAll" type="button">Select All</button>
       </div>
     </header>
 
     <main>
-      <div class="loading" id="loading" role="status">Loading gallery...</div>
-      <section class="grid" id="grid" aria-label="Photo gallery"></section>
+      <div class="loading" id="loading" role="status">Loading retouch queue...</div>
+      <section class="grid" id="grid" aria-label="Retouch photo queue"></section>
     </main>
 
     <div
@@ -89,8 +89,8 @@
       </div>
       <div class="selection-actions">
         <button class="button" id="clearSelection" type="button">Clear</button>
-        <button class="button" id="addToRetouch" type="button">
-          Add to Retouch
+        <button class="button" id="removeFromRetouch" type="button">
+          Remove from Queue
         </button>
         <button class="button primary" id="downloadSelection" type="button">
           Download Originals
