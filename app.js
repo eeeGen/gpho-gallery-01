@@ -1,6 +1,7 @@
 const state = {
   photos: [],
   allPhotos: [],
+  retouchFilenames: [],
   selected: new Set(),
   lightboxIndex: -1,
   observer: null,
@@ -8,7 +9,6 @@ const state = {
 };
 
 const $ = (id) => document.getElementById(id);
-const RETOUCH_STORAGE_KEY = "gpho-gallery-01-retouch-queue";
 
 const els = {
   grid: $("grid"),
@@ -43,24 +43,19 @@ async function init() {
     if (!response.ok) throw new Error(`Failed to load photos.json (${response.status})`);
     const data = await response.json();
     state.allPhotos = data.photos || [];
+    state.retouchFilenames = state.page === "retouch"
+      ? await getRetouchFilenames()
+      : [];
     state.photos = state.page === "retouch"
-      ? getRetouchPhotos(state.allPhotos)
+      ? filterPhotosByFilename(state.allPhotos, state.retouchFilenames)
       : state.allPhotos;
     setupObserver();
     renderGrid();
     bindEvents();
-    syncRetouchLink();
     els.loading.style.display = "none";
     syncPageMeta();
   } catch (error) {
     els.loading.textContent = error.message;
-  }
-}
-
-function syncRetouchLink() {
-  const filenames = readStoredRetouchQueue();
-  if (els.openRetouch && filenames.length) {
-    els.openRetouch.href = buildRetouchHref(filenames);
   }
 }
 
@@ -181,9 +176,10 @@ function syncUi() {
 
 function syncPageMeta() {
   if (state.page === "retouch") {
+    const source = readRetouchQuery().length ? "shared link" : "public queue";
     els.meta.textContent = state.photos.length
-      ? `${state.photos.length} retouch photos | originals only`
-      : "No retouch photos in this link";
+      ? `${state.photos.length} retouch photos | ${source} | originals only`
+      : "No retouch photos in the public queue";
     if (!state.photos.length) {
       els.loading.style.display = "grid";
       els.loading.innerHTML = 'No retouch photos selected. <a href="index.html">Return to gallery</a>.';
@@ -258,11 +254,7 @@ function addSelectionToRetouch() {
     .map((photo) => photo.filename);
   if (!filenames.length) return;
 
-  const current = readStoredRetouchQueue();
-  const merged = [...new Set([...current, ...filenames])];
-  writeStoredRetouchQueue(merged);
-
-  const href = buildRetouchHref(merged);
+  const href = buildRetouchHref(filenames);
   if (els.openRetouch) els.openRetouch.href = href;
   window.location.href = href;
 }
@@ -274,14 +266,25 @@ function removeSelectionFromRetouch() {
   const remaining = state.photos
     .filter((photo) => !selectedFilenames.has(photo.filename))
     .map((photo) => photo.filename);
-  writeStoredRetouchQueue(remaining);
 
   window.location.href = remaining.length ? buildRetouchHref(remaining) : "retouch.html";
 }
 
-function getRetouchPhotos(allPhotos) {
+async function getRetouchFilenames() {
   const requested = readRetouchQuery();
-  const filenames = requested.length ? requested : readStoredRetouchQueue();
+  if (requested.length) return requested;
+
+  try {
+    const response = await fetch("retouch.json", { cache: "no-store" });
+    if (!response.ok) return [];
+    const data = await response.json();
+    return Array.isArray(data.photos) ? data.photos.filter(Boolean) : [];
+  } catch {
+    return [];
+  }
+}
+
+function filterPhotosByFilename(allPhotos, filenames) {
   const requestedSet = new Set(filenames);
   return allPhotos.filter((photo) => requestedSet.has(photo.filename));
 }
@@ -294,24 +297,6 @@ function readRetouchQuery() {
     .split(",")
     .map((filename) => filename.trim())
     .filter(Boolean);
-}
-
-function readStoredRetouchQueue() {
-  try {
-    const value = window.localStorage.getItem(RETOUCH_STORAGE_KEY);
-    const filenames = JSON.parse(value || "[]");
-    return Array.isArray(filenames) ? filenames.filter(Boolean) : [];
-  } catch {
-    return [];
-  }
-}
-
-function writeStoredRetouchQueue(filenames) {
-  try {
-    window.localStorage.setItem(RETOUCH_STORAGE_KEY, JSON.stringify(filenames));
-  } catch {
-    // The URL remains shareable even when local storage is unavailable.
-  }
 }
 
 function buildRetouchHref(filenames) {
