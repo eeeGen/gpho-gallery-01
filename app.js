@@ -275,7 +275,7 @@ async function getRetouchFilenames() {
   if (requested.length) return requested;
 
   try {
-    const response = await fetch("retouch.json", { cache: "no-store" });
+    const response = await fetch(`retouch.json?v=${Date.now()}`, { cache: "no-store" });
     if (!response.ok) return [];
     const data = await response.json();
     return Array.isArray(data.photos) ? data.photos.filter(Boolean) : [];
